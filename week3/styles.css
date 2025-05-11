@@ -1,0 +1,56 @@
+body {
+  background-color: darkred;
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  background-color: #deb887;
+}
+
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+fieldset > div textarea, fieldset > div input {
+  background-color: #fffaf0;
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+  fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  fieldset > div label {
+    width: 100px;
+    margin-right: 1rem;
+    text-align: right;
+  }
+  fieldset > div > input,
+  fieldset > div > textarea {
+    flex: 1;
+    padding: 0.3rem;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
